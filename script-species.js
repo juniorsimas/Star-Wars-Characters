@@ -70,11 +70,11 @@ async function loadSpecies(url){
         
         const speciesHairColors = document.createElement("span");
         speciesHairColors.className = "character-details";
-        speciesHairColors.innerText = `Cores de Cabelo: ${species.hair_colors}`;
+        speciesHairColors.innerText = `Cores de Cabelo: ${convertSpeciesSkinColors(species.hair_colors)}`;
 
         const speciesEyeColors = document.createElement("span");
         speciesEyeColors.className = "character-details";
-        speciesEyeColors.innerText = `Cores dos Olhos: ${species.eye_colors}`;
+        speciesEyeColors.innerText = `Cores dos olhos: ${convertSpeciesSkinColors(species.eye_colors)}`;
         
         modalContent.appendChild(speciesImage);
         modalContent.appendChild(speciesName);
@@ -185,7 +185,6 @@ function converteSpeciesHeight(height){
 }
 
 // função de conversçao de cor da pede
-
 function convertSpeciesSkinColors(skinColors){
   const cores = {
     blue: "azul",
@@ -199,8 +198,7 @@ function convertSpeciesSkinColors(skinColors){
     hazel: "avela",
     gray: "cinza",
     ["blue-gray"]: "cinza azulado",
-   // ["red, blue"]:"vermelho, azul",
-    //["green, yellow"]: "verde, amarelo",
+    ["pale pink"]: "Rosa palido",
     gold: "ouro",
     white: "branco",
     caucasian: "caucasiano",
@@ -212,7 +210,13 @@ function convertSpeciesSkinColors(skinColors){
     unknown: "desconhecida",
     ["n/a"]: "desconhecida",
     dark: "escuro",
-    magenta: "magenta"
+    magenta: "magenta",
+    grey: "cinza",
+    purple: "roxo",
+    peach: "pessego",
+    golden:"dourado",
+    blond: "loiro",
+    silver: "prata"
   };
 
   return cores[skinColors.toLowerCase()] || convertColors(skinColors, cores);
@@ -246,10 +250,6 @@ function convertColors(corIngles,cores){
   // Eu retorno a cadeia de cores em português
   return cadeiaPortugues;
 }
-
-
-
-
 
 
 
