@@ -177,3 +177,8 @@ function meuMenu(){
   }
 }
 
+// Função para corrigig o favicon, caso não carregue do proprio projeto
+function colocarPlaceholder(elemento){
+  elemento.href = "https://juniorsimas.github.io/Star-Wars-Characters/assets/millennium-falcon.ico"
+}
+
