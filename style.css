@@ -260,7 +260,7 @@ footer {
 
 .modal-content {
   width: 30vw;
-  height: 70vh;
+  height: 80vh;
   background-color: #0d0d0d;
   border-radius: 12px;
   display: flex;
@@ -370,7 +370,7 @@ nav {
 
   .modal-content {
   width: 75vw;
-  height: 50vh;
+  height: 70vh;
   }
 
 
