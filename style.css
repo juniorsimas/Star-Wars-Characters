@@ -88,11 +88,15 @@ i:hover {
 }
 
 .menu-item:hover {
-  background-color: gold;
   color: #000;
+  background-color: gold;
+  font-weight: 500;
+  text-decoration: none;
+  
 }
 
 .mobile-container {
+  text-align: center;
   display: none;
   margin: auto;
   border-radius: 10px;
@@ -133,8 +137,8 @@ i:hover {
 
 .active {
   background-color: gold;
-  color:  #000;
-  font-weight: 500;
+  color:  #000 !important;
+  font-weight: 600;
 }
 
 .main-container {
@@ -148,6 +152,8 @@ i:hover {
 h2 {
   font-family: 'Star Wars', sans-serif;
   margin-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
   color: gold;
   font-weight: 300;
 }
@@ -349,7 +355,7 @@ nav {
 
 @media (max-width: 414px){
   h2 {
-    font-size: 1.1rem;
+    font-size: 1.0rem;
   }
 
   .logo {
